@@ -3,7 +3,6 @@ package com.brendow.cursomc.domain;
 import java.io.Serializable;
 import java.util.Objects;
 
-import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Inheritance;
@@ -25,7 +24,6 @@ private static final long serialVersionUID = 1L;
 	
 	@Id
 	private Long id;
-	@Column(nullable = false)
 	private Integer estado;
 	
 	@JsonIgnore

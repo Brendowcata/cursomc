@@ -3,7 +3,6 @@ package com.brendow.cursomc.domain;
 import java.io.Serializable;
 import java.util.Objects;
 
-import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -21,7 +20,6 @@ public class Cidade implements Serializable{
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
-	@Column(nullable = false)
 	private String nome;
 	
 	
